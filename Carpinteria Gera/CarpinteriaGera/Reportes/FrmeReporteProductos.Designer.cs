@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmeReporteProductos));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnGenerar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -123,6 +124,7 @@
             this.Controls.Add(this.dtpDesde);
             this.Controls.Add(this.RvProductos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmeReporteProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

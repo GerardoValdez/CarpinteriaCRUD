@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAcercaDe));
             this.lnkLinkedin = new System.Windows.Forms.LinkLabel();
             this.lnkGitHub = new System.Windows.Forms.LinkLabel();
             this.lblAcercaDe = new System.Windows.Forms.Label();
@@ -95,6 +96,7 @@
             this.Controls.Add(this.lnkGitHub);
             this.Controls.Add(this.lnkLinkedin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmAcercaDe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

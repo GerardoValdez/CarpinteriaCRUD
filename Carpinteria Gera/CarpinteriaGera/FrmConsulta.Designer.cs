@@ -28,10 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsulta));
             this.btnBorrar = new System.Windows.Forms.Button();
             this.BtnEditar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.dgvPresupuestos = new System.Windows.Forms.DataGridView();
+            this.colNro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDetalles = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCliente = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,11 +46,6 @@
             this.dtpHasta = new System.Windows.Forms.DateTimePicker();
             this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.btnConsultar = new System.Windows.Forms.Button();
-            this.colNro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDetalles = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPresupuestos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -103,6 +104,40 @@
             this.dgvPresupuestos.Size = new System.Drawing.Size(626, 230);
             this.dgvPresupuestos.TabIndex = 6;
             this.dgvPresupuestos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPresupuestos_CellContentClick);
+            // 
+            // colNro
+            // 
+            this.colNro.HeaderText = "Presupesto #";
+            this.colNro.Name = "colNro";
+            this.colNro.ReadOnly = true;
+            // 
+            // colFecha
+            // 
+            this.colFecha.HeaderText = "Fecha";
+            this.colFecha.Name = "colFecha";
+            this.colFecha.ReadOnly = true;
+            // 
+            // colCliente
+            // 
+            this.colCliente.HeaderText = "Cliente";
+            this.colCliente.Name = "colCliente";
+            this.colCliente.ReadOnly = true;
+            this.colCliente.Width = 169;
+            // 
+            // colTotal
+            // 
+            this.colTotal.HeaderText = "Total";
+            this.colTotal.Name = "colTotal";
+            this.colTotal.ReadOnly = true;
+            // 
+            // colDetalles
+            // 
+            this.colDetalles.HeaderText = "Acciones";
+            this.colDetalles.Name = "colDetalles";
+            this.colDetalles.ReadOnly = true;
+            this.colDetalles.Text = "Ver Detalles";
+            this.colDetalles.UseColumnTextForButtonValue = true;
+            this.colDetalles.Width = 115;
             // 
             // groupBox1
             // 
@@ -183,40 +218,6 @@
             this.btnConsultar.UseVisualStyleBackColor = false;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
-            // colNro
-            // 
-            this.colNro.HeaderText = "Presupesto #";
-            this.colNro.Name = "colNro";
-            this.colNro.ReadOnly = true;
-            // 
-            // colFecha
-            // 
-            this.colFecha.HeaderText = "Fecha";
-            this.colFecha.Name = "colFecha";
-            this.colFecha.ReadOnly = true;
-            // 
-            // colCliente
-            // 
-            this.colCliente.HeaderText = "Cliente";
-            this.colCliente.Name = "colCliente";
-            this.colCliente.ReadOnly = true;
-            this.colCliente.Width = 169;
-            // 
-            // colTotal
-            // 
-            this.colTotal.HeaderText = "Total";
-            this.colTotal.Name = "colTotal";
-            this.colTotal.ReadOnly = true;
-            // 
-            // colDetalles
-            // 
-            this.colDetalles.HeaderText = "Acciones";
-            this.colDetalles.Name = "colDetalles";
-            this.colDetalles.ReadOnly = true;
-            this.colDetalles.Text = "Ver Detalles";
-            this.colDetalles.UseColumnTextForButtonValue = true;
-            this.colDetalles.Width = 115;
-            // 
             // FrmConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,6 +230,7 @@
             this.Controls.Add(this.dgvPresupuestos);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

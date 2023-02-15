@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDetallePresupuesto));
             this.txtDto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -193,6 +194,7 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.dgvDetalles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmDetallePresupuesto";
             this.Text = "Presupuesto Nro ";
